@@ -46,8 +46,9 @@ class Board extends React.Component {
       [0, 4, 8],
       [2, 4, 6],
     ];
+
     for (let i = 0; i < lines.length; i++) {
-      let [a, b, c] = lines[i];
+      const [a, b, c] = lines[i];
       if (squares[a] && squares[a] === squares[b] && squares[a] === squares[c]) {
         return squares[a];
       }
@@ -76,14 +77,14 @@ class Board extends React.Component {
 
         <div className='board-row'>
           {this.renderSquare(3)}
+          {this.renderSquare(4)}
           {this.renderSquare(5)}
-          {this.renderSquare(6)}
         </div>
 
         <div className='board-row'>
+          {this.renderSquare(6)}
           {this.renderSquare(7)}
           {this.renderSquare(8)}
-          {this.renderSquare(9)}
         </div>
       </div>
     );//return
