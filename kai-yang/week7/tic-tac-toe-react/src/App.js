@@ -7,7 +7,7 @@ import Game from './Game';
 class App extends React.Component {
   render(){
     return (
-      <div>
+      <div className='tic'>
 
       <h1>Tic Tac Toe React Version</h1>
       <Game />
